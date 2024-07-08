@@ -34,7 +34,7 @@ ReactorKit-SwiftUI is useful in the following scenarios:
 
 ## Examples
 
-- [Counter](https://github.com/gunoooo/SwiftUI-ReactorKit/tree/master/Examples/Counter): The most simple and basic example of SwiftUI-ReactorKit
+- [Counter](https://github.com/gunoooo/ReactorKit-SwiftUI/tree/master/Examples/Counter): The most simple and basic example of SwiftUI-ReactorKit
 
 ## Dependencies
 
