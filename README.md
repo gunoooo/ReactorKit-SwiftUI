@@ -22,6 +22,12 @@ struct MyView: ReactorView {
   
   func body(reactor: MyReactor.ObservableObject) -> some View {
     // this is called when the state updates.
+    VStack {
+      Button("Hello") {
+        reactor.action.onNext(.helloTapped)
+      }
+      Text(reactor.state.title)
+    }
   }
 }
 ```
@@ -38,7 +44,7 @@ ReactorKit-SwiftUI is useful in the following scenarios:
 
 ## Dependencies
 
-- [ReactorKit](https://github.com/ReactorKit/ReactorKit) >= 3.0.0
+- [ReactorKit](https://github.com/ReactorKit/ReactorKit) >= 3.0
 
 ## Requirements
 
@@ -53,7 +59,7 @@ ReactorKit-SwiftUI is useful in the following scenarios:
 **Podfile**
 
 ```
-# Preparing..
+pod 'SwiftUIReactorKit'
 ```
 
 **Package.swift**
