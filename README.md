@@ -5,6 +5,12 @@
 
 <p align="center">
   <img alt="Swift" src="https://img.shields.io/badge/Swift-5.0-orange.svg">
+  <a href="https://cocoapods.org/pods/SwiftUIReactorKit" target="_blank">
+    <img alt="CocoaPods" src="http://img.shields.io/cocoapods/v/SwiftUIReactorKit.svg">
+  </a>
+  <a href="https://github.com/gunoooo/SwiftUIReactorKit" target="_blank">
+    <img alt="Platform" src="https://img.shields.io/cocoapods/p/SwiftUIReactorKit.svg?style=flat">
+  </a>
 </p>
 
 # ReactorKit-SwiftUI
@@ -66,11 +72,13 @@ pod 'SwiftUIReactorKit'
 
 ```swift
 let package = Package(
-  // ...
+  name: "MyPackage",
   dependencies: [
     .package(url: "https://github.com/gunoooo/ReactorKit-SwiftUI.git", .upToNextMajor(from: "0.0.1"))
   ],
-  // ...
+  targets: [
+    .target(name: "MyTarget", dependencies: ["ReactorKit-SwiftUI"])
+  ]
 )
 ```
 
