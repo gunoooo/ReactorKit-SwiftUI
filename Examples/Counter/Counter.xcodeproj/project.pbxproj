@@ -3,25 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4371DA16DA4418BEC6ED21B /* Pods_Example_Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFC215F6BA9E223DAC7580D /* Pods_Example_Counter.framework */; };
 		C893F4332C3793A7006A8459 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893F4322C3793A7006A8459 /* CounterApp.swift */; };
 		C893F4352C3793A7006A8459 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893F4342C3793A7006A8459 /* CounterView.swift */; };
 		C893F4372C3793A8006A8459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C893F4362C3793A8006A8459 /* Assets.xcassets */; };
 		C893F43A2C3793A8006A8459 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C893F4392C3793A8006A8459 /* Preview Assets.xcassets */; };
-		C893F4452C379607006A8459 /* SwiftUIReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = C893F4442C379607006A8459 /* SwiftUIReactorKit */; };
 		C893F4472C37A618006A8459 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893F4462C37A618006A8459 /* CounterViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EFC215F6BA9E223DAC7580D /* Pods_Example_Counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_Counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C893F42F2C3793A7006A8459 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C893F4322C3793A7006A8459 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		C893F4342C3793A7006A8459 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		C893F4362C3793A8006A8459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C893F4392C3793A8006A8459 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C893F4462C37A618006A8459 /* CounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewReactor.swift; sourceTree = "<group>"; };
+		CE3E2C071E2435A08B2CD233 /* Pods-Example-Counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Counter.debug.xcconfig"; path = "Target Support Files/Pods-Example-Counter/Pods-Example-Counter.debug.xcconfig"; sourceTree = "<group>"; };
+		F4FEE8BD728A9D61DFEDA468 /* Pods-Example-Counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Counter.release.xcconfig"; path = "Target Support Files/Pods-Example-Counter/Pods-Example-Counter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,18 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C893F4452C379607006A8459 /* SwiftUIReactorKit in Frameworks */,
+				A4371DA16DA4418BEC6ED21B /* Pods_Example_Counter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF04D3479185AD494F9F757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EFC215F6BA9E223DAC7580D /* Pods_Example_Counter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98830E907D8E73E3CFF8E2D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E2C071E2435A08B2CD233 /* Pods-Example-Counter.debug.xcconfig */,
+				F4FEE8BD728A9D61DFEDA468 /* Pods-Example-Counter.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		C893F4262C3793A7006A8459 = {
 			isa = PBXGroup;
 			children = (
 				C893F4312C3793A7006A8459 /* Counter */,
 				C893F4302C3793A7006A8459 /* Products */,
+				98830E907D8E73E3CFF8E2D0 /* Pods */,
+				2EF04D3479185AD494F9F757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C893F43D2C3793A8006A8459 /* Build configuration list for PBXNativeTarget "Counter" */;
 			buildPhases = (
+				FF06F157F9FD3AD705FC9AE3 /* [CP] Check Pods Manifest.lock */,
 				C893F42B2C3793A7006A8459 /* Sources */,
 				C893F42C2C3793A7006A8459 /* Frameworks */,
 				C893F42D2C3793A7006A8459 /* Resources */,
+				6200ECEBD325B916FC1E34B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -89,7 +114,6 @@
 			);
 			name = Counter;
 			packageProductDependencies = (
-				C893F4442C379607006A8459 /* SwiftUIReactorKit */,
 			);
 			productName = Counter;
 			productReference = C893F42F2C3793A7006A8459 /* Counter.app */;
@@ -120,7 +144,6 @@
 			);
 			mainGroup = C893F4262C3793A7006A8459;
 			packageReferences = (
-				C893F4432C379607006A8459 /* XCLocalSwiftPackageReference "../.." */,
 			);
 			productRefGroup = C893F4302C3793A7006A8459 /* Products */;
 			projectDirPath = "";
@@ -142,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6200ECEBD325B916FC1E34B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example-Counter/Pods-Example-Counter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example-Counter/Pods-Example-Counter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example-Counter/Pods-Example-Counter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF06F157F9FD3AD705FC9AE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-Counter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C893F42B2C3793A7006A8459 /* Sources */ = {
@@ -209,7 +274,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +330,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -278,6 +341,7 @@
 		};
 		C893F43E2C3793A8006A8459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3E2C071E2435A08B2CD233 /* Pods-Example-Counter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,13 +349,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Counter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +372,7 @@
 		};
 		C893F43F2C3793A8006A8459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4FEE8BD728A9D61DFEDA468 /* Pods-Example-Counter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,13 +380,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Counter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,20 +423,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		C893F4432C379607006A8459 /* XCLocalSwiftPackageReference "../.." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../..;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C893F4442C379607006A8459 /* SwiftUIReactorKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftUIReactorKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C893F4272C3793A7006A8459 /* Project object */;
 }

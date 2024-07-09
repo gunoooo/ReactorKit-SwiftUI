@@ -1,0 +1,32 @@
+PODS:
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxSwift (6.7.1)
+  - SwiftUIReactorKit (0.0.2):
+    - ReactorKit (~> 3.0)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - ReactorKit (~> 3.0)
+  - SwiftUIReactorKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ReactorKit
+    - RxSwift
+    - WeakMapTable
+
+EXTERNAL SOURCES:
+  SwiftUIReactorKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  SwiftUIReactorKit: c3bd80442de44ad2d1273061880b1fbef66d31d6
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: 67f0f2ae3c7df49bdec53dd687ac99ac0d7035e3
+
+COCOAPODS: 1.15.2
