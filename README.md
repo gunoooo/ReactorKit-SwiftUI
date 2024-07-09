@@ -77,7 +77,7 @@ let package = Package(
     .package(url: "https://github.com/gunoooo/ReactorKit-SwiftUI.git", .upToNextMajor(from: "0.0.1"))
   ],
   targets: [
-    .target(name: "MyTarget", dependencies: ["ReactorKit-SwiftUI"])
+    .target(name: "MyTarget", dependencies: ["SwiftUIReactorKit"])
   ]
 )
 ```
