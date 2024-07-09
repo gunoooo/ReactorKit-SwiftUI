@@ -58,7 +58,7 @@ ReactorKit-SwiftUI is useful in the following scenarios:
 
 **Podfile**
 
-```
+```ruby
 pod 'SwiftUIReactorKit'
 ```
 
