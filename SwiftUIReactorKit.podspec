@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftUIReactorKit"
-  s.version          = "0.0.4"
+  s.version          = "1.0.0"
   s.summary          = "An extension of devxoul's ReactorKit, specifically designed to work with SwiftUI"
   s.homepage         = "https://github.com/gunoooo/ReactorKit-SwiftUI"
   s.license          = { :type => "MIT", :file => "LICENSE" }
